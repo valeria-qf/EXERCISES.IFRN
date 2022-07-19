@@ -1,2 +1,3 @@
 # EXERCISES.IFRN
- Exercícios feitos na faculdade
+
+ Exercícios feitos ao longo da faculdade 

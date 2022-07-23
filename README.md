@@ -1,3 +1,3 @@
 # EXERCISES.IFRN
 
- Exercícios feitos ao longo da faculdade 
+Programming exercises done throughout college!

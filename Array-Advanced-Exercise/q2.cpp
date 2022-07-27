@@ -47,4 +47,5 @@ srand((unsigned)time(NULL));
     {
         cout<<"Não há números repetidos!"<<endl;
     }
+    return 0;
 }

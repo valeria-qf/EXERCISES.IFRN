@@ -4,51 +4,34 @@ existem números repetidos no vetor VET e em que posições se encontram*/
 #include <iostream>
 using namespace std;
 int main()
+    
 {
-    int VET[15], n;
-    bool repete;
+int V[15], cont;
 
-    for (int i=0; i<15; i++)
+srand((unsigned)time(NULL));
+
+for (int i; i<15; i++)
+{
+    V[i]=rand()%100;
+    cout<<V[i]<<"|";
+}
+
+for (int i=0; i<15; i++)
+{
+    for (int j=i+1; j<15; j++)
     {
-        cout<<"Digite um número:"<<endl;
-        cin>>n;
-        VET[i]=n;
-
-    }
-
-    for (int j=0; j<14; j++)
-    {
-        for (int k=j+1; k<15; k++)
+        if (V[i]==V[j])
         {
-            if (VET[j]==VET[k])
-            {
-                repete=true;
-            }
+            cout<<endl;
+            cout<<"O número "<<V[i]<<" está repetido nas posições "<<i<<" e "<<j<<endl;
+            cont++;
         }
-    }
-
-    if (repete==true)
-    {
-        cout<<"Há números repetidos no vetor"<<endl;
-    
-
-    for (int l=0; l<14; l++)
-    {
-        for (int m=l+1; m<15; m++)
+}
+}    
+        if (cont==0)
         {
-            if (VET[l]==VET[m])
-            {
-                cout<<"O valor na posição "<<l<< " e "<<m<<" estão repetidos"<<endl;
-            }
-
+            cout<<endl;
+            cout<<"Não há números repetidos!"<<endl;
         }
-    }
-    }
-    
-    else
-    {
-        cout<<"Não há valores que se repetem"<<endl;
-    }
-
 return 0;
 }

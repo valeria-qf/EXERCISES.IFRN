@@ -47,14 +47,11 @@ int cont=0;
     for (int l=1; l<=10; l++)
     {
         
-        cout<<"A média do aluno "<<l<<" é:"<< M[l] <<endl;
-        
         if(M[l]>=7) 
         {
             cont++;
         }
         
-
     }
         cout<<"Número de alunos acima da média:"<< cont <<endl;
 

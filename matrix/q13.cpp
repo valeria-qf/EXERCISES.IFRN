@@ -9,9 +9,9 @@ int main()
 
     srand((unsigned)time(NULL));
     
-    for (int i=0; i<5; i++)
+    for (int i=1; i<=5; i++)
     {
-        for (int j=0; j<5; j++)
+        for (int j=1; j<=5; j++)
         {
             A[i][j]=rand()%100;
             cout<<A[i][j]<<"  ";
@@ -20,18 +20,21 @@ int main()
     }
 
     
-    for (int i=0; i<5; i++)
+    for (int i=1; i<=5; i++)
     {
-        for (int j=0; j<5; j++)
+        for (int j=1; j<=5; j++)
         {
-            if((i==j) && (A[i][j]%2!=0))
-            {
-                soma=soma+A[i][j];
-            }
+            if((i==j)
+               {
+                   if (i%2!=0)
+                    {
+                        soma=soma+A[i][j];
+                    }
+               }
         }
     }
     cout<<endl;
-    cout<<"Soma dos impares da diagonal principal: "<<soma<<endl;
+    cout<<"Soma dos indices impares da diagonal principal: "<<soma<<endl;
 
 return 0;
 }

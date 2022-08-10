@@ -42,9 +42,9 @@ int main()
                 for (int k=0; k<=A[i][j]; k++)
                 {
                 soma=soma+k;
-                 B[i][j]=soma;
                 
                 }
+                 B[i][j]=soma;
             }
 
             cout<<B[i][j]<<" | ";

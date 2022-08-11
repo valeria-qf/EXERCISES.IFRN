@@ -1,7 +1,7 @@
 /*Elaborar um programa que leia uma matriz A do tipo inteira de duas dimensões com sete
 linhas e sete colunas. Construir a matriz B de mesma dimensão, em que cada elemento seja
 o somatório de 1 até o valor armazenado na posição da matriz A, com exceção dos valores
-situados nos índices ímpares da diagonal principal (B[1,1], B[3,3], B[5,5] e B[7,7]), os quais
+situados nos índices da diagonal principal (B[1,1], B[3,3], B[5,5] e B[7,7]), os quais
 devem ser o fatorial de cada elemento correspondente da matriz A. Apresentar ao final a
 matriz B.*/
 
@@ -13,9 +13,9 @@ int main()
 
      srand((unsigned)time(NULL));
     
-    for (int i=0; i<5; i++)
+    for (int i=0; i<7; i++)
     {
-        for (int j=0; j<5; j++)
+        for (int j=0; j<7; j++)
         {
             A[i][j]=rand()%10;
             cout<<A[i][j]<<" | ";
@@ -23,9 +23,9 @@ int main()
         cout<<endl;
     }
     cout<<endl;
-      for (int i=0; i<5; i++)
+      for (int i=0; i<7; i++)
     {
-        for (int j=0; j<5; j++)
+        for (int j=0; j<7; j++)
         {
             if(i==j)
             {
@@ -42,9 +42,9 @@ int main()
                 for (int k=0; k<=A[i][j]; k++)
                 {
                 soma=soma+k;
-                 B[i][j]=soma;
                 
                 }
+                 B[i][j]=soma;
             }
 
             cout<<B[i][j]<<" | ";
